@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2c6bff"
+        tools:context=".MissionActivity">
+
+        <TextView
+            android:id="@+id/mission_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="미션 세트 만들기"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/font3"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="24dp"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_end="24dp"
+            />
+
+        <TextView
+            android:id="@+id/mission_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미션 세트 이름"
+            android:textSize="18sp"
+            android:fontFamily="@font/font3"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintTop_toBottomOf="@id/mission_header_txt"
+            android:layout_marginTop="40dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mission_name_card"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintRight_toRightOf="@id/guide2"
+            app:layout_constraintTop_toBottomOf="@id/mission_name_txt"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="5dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/mission_set_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="미션 세트 이름"
+                    android:fontFamily="@font/font3"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/mission_content_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미션 입력"
+            android:textSize="18sp"
+            android:fontFamily="@font/font3"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintTop_toBottomOf="@id/mission_name_card"
+            android:layout_marginTop="30dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mission_content_card"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintRight_toRightOf="@id/guide2"
+            app:layout_constraintTop_toBottomOf="@id/mission_content_txt"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="5dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/mission_content_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="미션 입력"
+                    android:fontFamily="@font/font3"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_mission"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/mission_content_card"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/mission_added_card"
+            android:background="@drawable/button_radius"
+            android:fontFamily="@font/font3"
+            android:text="미션 저장"
+            android:textSize="18sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/mission_added_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가된 미션"
+            android:textSize="18sp"
+            android:fontFamily="@font/font3"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintTop_toBottomOf="@id/mission_content_card"
+            android:layout_marginTop="50dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mission_added_card"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintLeft_toLeftOf="@id/guide1"
+            app:layout_constraintRight_toRightOf="@id/guide2"
+            app:layout_constraintTop_toBottomOf="@id/mission_added_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="5dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mission_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_missionset"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/mission_added_card"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/button_radius"
+            android:fontFamily="@font/font3"
+            android:text="저장하기"
+            android:textSize="25sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

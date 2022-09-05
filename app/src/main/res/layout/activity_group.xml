@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GroupActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:id="@+id/header_view"
+                    android:layout_width="match_parent"
+                    android:background="#ff2c2c"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="250dp" />
+
+                <TextView
+                    android:id="@+id/header_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff"
+                    android:text="그룹"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/font3"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/header_txt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="#ffffff"
+                    android:text="그룹코드로 그룹에 참여하거나 그룹을 생성해 친구들을 초대해 보세요"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="154dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/font2"
+                    />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintGuide_begin="24dp"
+                    />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintGuide_end="24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/group_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그룹 참여"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font3"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/header_view"
+                    app:layout_constraintLeft_toLeftOf="@id/guideline1"
+                    android:layout_marginTop="44dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/group_card1"
+                    android:layout_width="0dp"
+                    android:layout_height="181dp"
+                    app:layout_constraintLeft_toLeftOf="@id/guideline1"
+                    app:layout_constraintRight_toRightOf="@id/guideline2"
+                    app:layout_constraintTop_toBottomOf="@id/group_txt1"
+                    android:layout_marginTop="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:layout_height="wrap_content"
+                            android:text="그룹코드로 참여하기"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font3"
+                            android:textSize="19sp" />
+                        <EditText
+                            android:id="@+id/group_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:inputType="number"
+                            android:hint="0000"
+                            android:textSize="50sp"
+                            android:fontFamily="@font/font3"
+                            android:background="@null"
+                            android:maxLength="4"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/group_join_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            app:cardBackgroundColor="#ff2c2c"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginLeft="60dp"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:text="참여하기"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/font3"
+                                android:layout_gravity="center"
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/group_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그룹 생성"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font3"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/group_card1"
+                    app:layout_constraintLeft_toLeftOf="@id/guideline1"
+                    android:layout_marginTop="30dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="127dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintLeft_toLeftOf="@id/guideline1"
+                    app:layout_constraintRight_toRightOf="@id/guideline2"
+                    app:layout_constraintTop_toBottomOf="@id/group_txt2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="33dp"
+                            android:layout_height="wrap_content"
+                            android:text="그룹 만들기"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font3"
+                            android:textSize="19sp" />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/group_create_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            app:cardBackgroundColor="#ff2c2c"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginLeft="60dp"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:text="만들기"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/font3"
+                                android:layout_gravity="center"
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

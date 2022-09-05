@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/background_splash.xml" value="0.2985" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/button_radius.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/input_radius.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/shadow.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/drawable/triangle.xml" value="0.2135" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/font/font.xml" value="0.3902564102564103" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/font/font2.xml" value="0.3902564102564103" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/font/font3.xml" value="0.3902564102564103" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_group.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_group_create.xml" value="0.33" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_main2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_manito.xml" value="0.335243553008596" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_member.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_mission.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_signup.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/item_group.xml" value="0.33" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/item_manito.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/item_mission.xml" value="0.274609375" />
+        <entry key="..\:/Users/SAMSUNG/projects/android_project/App_priend/app/src/main/res/layout/item_mission_create.xml" value="0.3651041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
